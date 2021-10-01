@@ -41,4 +41,9 @@ class DeviceId {
     final String meid = await _channel.invokeMethod('getMacAddress');
     return meid;
   }
+  
+  static Future<String> get getCarrierName async {
+    final String carrierName = await _channel.invokeMethod('getCarrierName');
+    return carrierName;
+  }
 }
