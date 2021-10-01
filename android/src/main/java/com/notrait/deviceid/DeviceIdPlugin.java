@@ -129,7 +129,7 @@ public class DeviceIdPlugin implements MethodCallHandler {
                 }
                 break;
             }
-            case "carrierName": {
+            case "getCarrierName": {
                 if (!isSimStateReady()) {
                     result.success("");
                     return;
